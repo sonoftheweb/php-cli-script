@@ -1,0 +1,21 @@
+#!/usr/bin/php
+<?php
+
+if (php_sapi_name() !== 'cli') {
+    exit;
+}
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Cli\App;
+use Controllers\SearchController;
+
+$app = new App();
+
+$app->registerController('search', new SearchController($app));
+
+$app->registerCommand('help', function (array $argv) use ($app) {
+    $app->getOutput()->display("Search using 'search'");
+});
+
+$app->runCommand($argv);
