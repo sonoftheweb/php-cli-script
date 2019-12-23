@@ -9,4 +9,24 @@ hit's me in the head :D.
 So I decided to let loose... just a bit to satisfy scalability. The codebase is still simple in it's implementation and ties to 
 a mini framework utilizing some packages.
 
+### Requirments
+
+* PHP 7
+* Composer
+* Orange Juice (it's so simple you would not need coffee)
+
+### Installation
+
+* Clone this repository on your local machine
+    
+  ``git clone https://github.com/sonoftheweb/php-cli-script.git``
+  
+* Run composer install
+
+  ``composer install``
+  
+* Run dump-autoload
+
+  ``composer dump-autload``
+
  Enjoy!
