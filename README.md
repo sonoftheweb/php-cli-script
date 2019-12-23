@@ -28,5 +28,9 @@ a mini framework utilizing some packages.
 * Run dump-autoload
 
   ``composer dump-autload``
+  
+##### To run search:
+
+``./cosset_test_cli search Halifax``
 
  Enjoy!
